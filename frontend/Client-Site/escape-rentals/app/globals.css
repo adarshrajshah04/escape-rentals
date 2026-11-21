@@ -1,0 +1,68 @@
+
+@import "tailwindcss";
+
+:root {
+  /* Primary Colors */
+  --escaperentals-primary: #A6533C;
+  --escaperentals-primary-dark: #843F2D;
+  --escaperentals-secondary: #C9795B;
+  --escaperentals-accent: #E5B99D;
+
+  /* Background Colors */
+  --escaperentals-background: #FAF5EF;
+  --escaperentals-surface: #E8D9C7;
+
+  /* Text Colors */
+  --escaperentals-text-primary: #34302D;
+  --escaperentals-text-secondary: #6B625C;
+
+  /* Border */
+  --escaperentals-border: #E5B99D;
+
+  /* Status Colors */
+  --escaperentals-success: #63856A;
+  --escaperentals-warning: #D9A441;
+  --escaperentals-danger: #C65345;
+  --escaperentals-info: #6B91A5;
+}
+
+@theme inline {
+  --color-primary: var(--escaperentals-primary);
+  --color-primary-dark: var(--escaperentals-primary-dark);
+  --color-secondary: var(--escaperentals-secondary);
+  --color-accent: var(--escaperentals-accent);
+
+  --color-background: var(--escaperentals-background);
+  --color-surface: var(--escaperentals-surface);
+
+  --color-text-primary: var(--escaperentals-text-primary);
+  --color-text-secondary: var(--escaperentals-text-secondary);
+
+  --color-border: var(--escaperentals-border);
+
+  --color-success: var(--escaperentals-success);
+  --color-warning: var(--escaperentals-warning);
+  --color-danger: var(--escaperentals-danger);
+  --color-info: var(--escaperentals-info);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100%;
+  background: var(--escaperentals-background);
+  color: var(--escaperentals-text-primary);
+  font-family: var(--font-geist-sans), sans-serif;
+}
+
+::selection {
+  background: var(--escaperentals-accent);
+  color: var(--escaperentals-text-primary);
+}
+
+/* :focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--escaperentals-primary) 55%, white);
+  outline-offset: 3px;
+} */
